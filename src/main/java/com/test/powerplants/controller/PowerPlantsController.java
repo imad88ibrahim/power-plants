@@ -16,7 +16,7 @@ public class PowerPlantsController {
     private PowerPlantsService powerPlantsService;
 
     @GetMapping("/{seqGen}")
-    public PowerPlantsDto displayBottomNOrderByTotalGen(@PathVariable("seqGen") long seqGen) {
+    public PowerPlantsDto getPlantsDetails(@PathVariable("seqGen") long seqGen) {
         return powerPlantsService.getPlantsDetails(seqGen);
     }
 
